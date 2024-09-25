@@ -1,1 +1,71 @@
-UTU TURKIYE VCARD PAGES
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            text-align: center;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+        .firm-logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+        .vcard-link {
+            font-size: 20px;
+            color: #0073b1;
+            text-decoration: none;
+            display: block;
+            margin: 20px 0;
+            transition: opacity 0.5s ease-in-out;
+        }
+        .vcard-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Firm Logo -->
+    <img class="firm-logo" src="firm-logo.png" alt="Firm Logo">
+
+    <!-- vCard Links -->
+    <a id="vcard-link" class="vcard-link" href="personal1-vcard.html">View Personal 1's vCard</a>
+</div>
+
+<script>
+    // Rotate between vCard links for Personal 1 and Personal 2
+    const vcardLink = document.getElementById('vcard-link');
+    let isPersonal1 = true;
+
+    setInterval(() => {
+        if (isPersonal1) {
+            vcardLink.textContent = "View Personal 2's vCard";
+            vcardLink.href = "personal2-vcard.html";
+        } else {
+            vcardLink.textContent = "View Personal 1's vCard";
+            vcardLink.href = "personal1-vcard.html";
+        }
+        isPersonal1 = !isPersonal1;
+    }, 5000); // Change every 5 seconds
+</script>
+
+</body>
+</html>
