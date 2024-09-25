@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vCard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .vcard {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 300px;
+            width: 100%;
+        }
+
+        .vcard img {
+            border-radius: 50%;
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            margin-bottom: 20px;
+        }
+
+        .firm-logo {
+            width: 150px;
+            margin-bottom: 20px;
+        }
+
+        .vcard h2 {
+            margin-bottom: 10px;
+            font-size: 24px;
+            color: #333;
+        }
+
+        .vcard a {
+            display: block;
+            margin: 10px 0;
+            text-decoration: none;
+            color: #0073b1;
+            font-size: 16px;
+        }
+
+        .vcard a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="vcard">
+        <!-- User Photo -->
+        <img src="user-photo.jpg" alt="User Photo">
+
+        <!-- Firm Logo -->
+        <img class="firm-logo" src="firm-logo.png" alt="Firm Logo">
+
+        <!-- Name -->
+        <h2>John Doe</h2>
+
+        <!-- Telephone Number (Click to Call) -->
+        <a href="tel:+1234567890">+1 (234) 567-890</a>
+
+        <!-- Email (Click to Email) -->
+        <a href="mailto:john.doe@example.com">john.doe@example.com</a>
+
+        <!-- LinkedIn Profile -->
+        <a href="https://www.linkedin.com/in/johndoe" target="_blank">LinkedIn Profile</a>
+
+        <!-- Website Link -->
+        <a href="https://www.example.com" target="_blank">www.example.com</a>
+    </div>
+
+</body>
+
+</html>
