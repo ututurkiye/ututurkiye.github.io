@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Century+Gothic:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+body {
+    background-color: #001F3F;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.background-logo {
+    position: absolute;
+    top: -100vh;
+    left: -200vh;
+    width: 300%;
+    height: 300%;
+    background-image: url('https://i.ibb.co/XLr6PMm/Beyaz-Sembol-PNG.png');
+    background-repeat: repeat;
+    background-size: 400px;
+    opacity: 0.1;
+    transform: rotate(45deg);
+    z-index: 0;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(54, 69, 79, 0.8);
+    /* Şeffaf arka plan kutusu */
+    padding: 30px;
+    border-radius: 20px;
+    z-index: 1;
+    width: 300px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    border: 4px solid #E4BF47;
+}
+
+h1 {
+    font-size: 2rem;
+    color: #E4BF47;
+    /* Vurgu rengi */
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #36454F;
+    color: #E0E0E0;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    text-decoration: none;
+    font-family: 'Century Gothic', sans-serif;
+}
+
+.btn i {
+    font-size: 1.2rem;
+}
+
+.btn:hover {
+    background-color: #9DB17C;
+    transform: scale(1.05);
+}
+
+.btn:active {
+    background-color: #E4BF47;
+    transform: scale(0.98);
+}
+
+.custom-icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url('/custom_icon.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
