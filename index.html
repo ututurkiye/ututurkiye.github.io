@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="tr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./favicon.ico">
     <title>UTU Türkiye</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Century+Gothic:wght@400&display=swap');
-        
+
         * {
             margin: 0;
             padding: 0;
             box-sizing: border-box;
             font-family: 'Century Gothic', sans-serif;
         }
+
         body {
-            background-color: #001F3F; /* Firma ana rengi */
-            color: #E0E0E0; /* Yazı renginde kontrast */
+            background-color: #001F3F;
+            /* Firma ana rengi */
+            color: #E0E0E0;
+            /* Yazı renginde kontrast */
             display: flex;
             justify-content: center;
             align-items: center;
@@ -23,6 +28,7 @@
             position: relative;
             overflow: hidden;
         }
+
         .background-logo {
             position: absolute;
             top: -200px;
@@ -36,44 +42,56 @@
             transform: rotate(45deg);
             z-index: 0;
         }
+
         .container {
             text-align: center;
             position: relative;
             z-index: 1;
         }
+
         h1 {
             font-size: 2.5rem;
-            color: #E4BF47; /* Firmanın birincil vurgusu */
+            color: #E4BF47;
+            /* Firmanın birincil vurgusu */
             margin-bottom: 30px;
         }
+
         .button-group {
             display: flex;
             justify-content: center;
             gap: 30px;
         }
+
         .btn {
-            background-color: #36454F; /* Buton rengi */
-            color: #E0E0E0; /* Buton yazı rengi */
+            background-color: #36454F;
+            /* Buton rengi */
+            color: #E0E0E0;
+            /* Buton yazı rengi */
             padding: 15px 50px;
             border: none;
             border-radius: 15px;
-            text-transform: capitalize; /* İlk harf büyük */
+            text-transform: capitalize;
+            /* İlk harf büyük */
             font-size: 1.2rem;
             cursor: pointer;
             transition: transform 0.3s ease, background-color 0.3s ease;
             box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
         }
+
         .btn:hover {
-            background-color: #9DB17C; /* Hover için renk değişikliği */
+            background-color: #9DB17C;
+            /* Hover için renk değişikliği */
             transform: scale(1.08);
             box-shadow: 0px 15px 20px rgba(0, 0, 0, 0.3);
         }
+
         .btn:active {
             background-color: #E4BF47;
             transform: scale(0.95);
         }
     </style>
 </head>
+
 <body>
     <div class="background-logo"></div>
     <div class="container">
@@ -84,4 +102,5 @@
         </div>
     </div>
 </body>
+
 </html>
