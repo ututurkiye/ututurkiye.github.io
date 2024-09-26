@@ -53,6 +53,12 @@ h1 {
     font-size: 2rem;
     color: #E4BF47;
     /* Vurgu rengi */
+    margin-bottom: 0px;
+}
+h2 {
+    font-size: 1rem;
+    color: #e0e0e0;
+    /* Vurgu rengi */
     margin-bottom: 20px;
 }
 
